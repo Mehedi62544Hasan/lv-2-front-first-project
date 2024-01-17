@@ -8,8 +8,6 @@ const TodoContainer = () => {
   const [priority, setPriority] = useState("");
   const { data: todos } = useGetTodosQuery(priority);
 
-  console.log(priority);
-
   return (
     <div>
       <div className="flex justify-between mb-2 text-white text-xl font-semibold">
